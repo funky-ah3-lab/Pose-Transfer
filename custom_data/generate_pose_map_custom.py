@@ -1,15 +1,19 @@
 import numpy as np
 import pandas as pd 
 import json
-import os 
+import os
+import sys
+
 
 MISSING_VALUE = -1
 # fix PATH
-img_dir  = 'fashion_data' #raw image path
-annotations_file = 'fashion_data/fasion-resize-annotation-train.csv' #pose annotation path
-save_path = 'fashion_data/trainK' #path to store pose maps
-annotations1_file = 'fashion_data/fasion-resize-annotation-test.csv' #pose annotation path
-save1_path = 'fashion_data/testK' #path to store pose maps
+mode = sys.argv[1]
+ann_mode = 'fasion'
+if len(sys.argv) > 2:
+    ann_mode = sys.argv[2]
+
+annotations_file = f'{ann_mode}-resize-annotation-{mode}.csv'
+save_path = f'{mode}K'
 
 
 def load_pose_cords_from_strings(y_str, x_str):
@@ -46,4 +50,4 @@ def compute_pose(image_dir, annotations_file, savePath):
 
 
 # compute_pose(img_dir, annotations_file, save_path)
-compute_pose(img_dir, annotations1_file, save1_path)
+compute_pose('.', annotations_file, save_path)
