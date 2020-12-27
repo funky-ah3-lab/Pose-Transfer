@@ -18,7 +18,7 @@ The model performs best when met with below requirements
 
 You can install pytorch 0.3.1 by
 ```{commandline}
-$ conda install pytorch=0.4.1 cuda90 -c pytorch
+$ conda install pytorch=0.3.1 cuda90 -c pytorch
 ```
 Rest of the package can be installed in an orthodox method with pip.
 
