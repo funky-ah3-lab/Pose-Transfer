@@ -5,7 +5,7 @@ cd custom_data
 cd ..
 
 python train.py --dataroot ./custom_data/ \
-    --name custom_PATN \
+    --name notext_PATN \
     --model PATN \
     --lambda_GAN 5 \
     --lambda_A 1 \

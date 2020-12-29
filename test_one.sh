@@ -5,7 +5,7 @@ cd custom_data
 cd ..
 
 python test.py --dataroot ./custom_data/ \
-    --name custom_PATN \
+    --name notext_PATN \
     --model PATN \
     --phase test \
     --dataset_mode keypoint \
