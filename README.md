@@ -1,5 +1,5 @@
 # Pose-Transfer
-This repository is forked [this](https://github.com/tengteng95/Pose-Transfer) repo.
+This repository is forked from [this](https://github.com/tengteng95/Pose-Transfer) repo.
 
 This repo is modified for the purpose of the enhancement of the model upon different domains of dataset.
 
