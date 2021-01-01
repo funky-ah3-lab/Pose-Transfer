@@ -38,7 +38,7 @@ for i, data in enumerate(dataset):
     startTime = time.time()
     model.test()
     endTime = time.time()
-    print(endTime-startTime)
+    print(endTime - startTime)
     visuals = model.get_current_visuals()
     img_path = model.get_image_paths()
     img_path = [img_path]
